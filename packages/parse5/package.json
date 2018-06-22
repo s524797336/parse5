@@ -1,10 +1,13 @@
 {
-    "name": "parse5",
+    "name": "@s524797336/parse5",
     "description": "HTML parser and serializer.",
-    "version": "5.0.0",
+    "version": "1.0.2",
     "author": "Ivan Nikulin <ifaaan@gmail.com> (https://github.com/inikulin)",
     "contributors": "https://github.com/inikulin/parse5/graphs/contributors",
     "homepage": "https://github.com/inikulin/parse5",
+    "scripts": {
+        "build": "babel src -d dist"
+    },
     "keywords": [
         "html",
         "parser",
@@ -23,10 +26,17 @@
         "serialize"
     ],
     "license": "MIT",
-    "main": "./lib/index.js",
+    "main": "dist/index.js",
     "repository": {
         "type": "git",
         "url": "git://github.com/inikulin/parse5.git"
     },
-    "files": ["lib"]
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "babel": "^6.23.0",
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0"
+    }
 }
